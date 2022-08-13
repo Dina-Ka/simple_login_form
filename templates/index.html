@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple login Page</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<!-- https://codepen.io/andytran/pen/GpyKLM -->
+<body class="body-bg">
+
+    <div class="position-relative w-50 vh-100 m-auto">
+        <!-- ****** LOGIN ******* -->
+        <div class="layer-1 login position-absolute w-100">
+            <div class="bg-white rounded-3 shadow-lg  bg-body  p-4">
+                <div class="form-title py-3">
+                    <p class="fw-bold text-primary  text-uppercase">Account Login</p>
+                </div>
+                <div class="form-inputs ">
+                    <div class="mb-4">
+                        <p class="mb-1">Email Address</p>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-pill" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label for="floatingInput" class="p-2">Email address</label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="mb-1">Password</p>
+                        <div class="form-floating">
+                            <input type="password" class="form-control rounded-pill" id="floatingPassword"
+                                placeholder="Password">
+                            <label for="floatingPassword" class="p-2">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <input type="checkbox" name="rememberme" value="y"> Remember me
+                            </div>
+                            <div>
+                                <a href="#">Forget my password ?</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="btnlogin">
+                        <button class="btn btn-primary w-100"> LOGIN </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- END:: LOGIN -->
+
+        <!-- Registration -->
+        <div class="layer-2 registration position-absolute w-100">
+            <div class="bg-primary rounded-3 shadow-lg  p-4">
+                <div class="form-title py-3">
+                    <p class="fw-bold text-white  text-uppercase">Account Registration</p>
+                </div>
+
+                <div class="form-inputs ">
+                    <div class="mb-4">
+                        <p class="mb-1 text-white">Email Address</p>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-pill" id="floatingInput"
+                                placeholder="name@example.com">
+                            <label for="floatingInput" class="p-2">Email address</label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="mb-1 text-white">Password</p>
+                        <div class="form-floating">
+                            <input type="password" class="form-control rounded-pill" id="floatingPassword"
+                                placeholder="Password">
+                            <label for="floatingPassword" class="p-2">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="mb-1 text-white">Confirm Password</p>
+                        <div class="form-floating">
+                            <input type="password" class="form-control rounded-pill" id="floatingPassword"
+                                placeholder="Password">
+                            <label for="floatingPassword" class="p-2">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="mb-1 text-white">Email Adress</p>
+                        <div class="form-floating">
+                            <input type="email" class="form-control rounded-pill" id="floatingPassword"
+                                placeholder="Password">
+                            <label for="floatingPassword" class="p-2">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="btnreg">
+                        <button class="btn btn-light w-100"> Registration </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End:: Registration -->
+
+        <!-- Copy rights -->
+        <div class="m-auto copy-rights position-absolute w-100 text-center ">
+            Developed By Dina & Designed by Andy Tran
+        </div>
+        <!-- End:: Copy rights -->
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
