@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #customername {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input id="firstname" name="firstname">
+        <input id="lastname" name="lastname">
+        <button class="logininput" type="button">Login</button>
+        <button class="clearinput" type="button">clear</button>
+    </form>
+    <div>
+        Weclome <p id="customername"></p>
+    </div>
+
+    <script>
+        window.onload = function () {
+            document.getElementById("firstname").value = " "
+            document.getElementById("lastname").value = " "
+            document.getElementById("customername").innerText = ` `;
+        };
+
+        document.getElementsByClassName("logininput")[0].addEventListener("click", function () {
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            document.getElementById("customername").innerText = `${firstname} ${lastname}`;
+        }
+        )
+
+        document.getElementsByClassName("clearinput")[0].addEventListener("click", function () {
+            document.getElementById("firstname").value = " "
+            document.getElementById("lastname").value = " "
+            document.getElementById("customername").innerText = ` `;
+        })
+
+
+    </script>
+</body>
+
+</html>
